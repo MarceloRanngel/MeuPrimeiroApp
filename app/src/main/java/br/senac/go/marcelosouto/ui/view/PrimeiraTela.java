@@ -26,5 +26,14 @@ public class PrimeiraTela extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        ImageButton sobreButton = findViewById(R.id.imageButton2);
+        sobreButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+             Intent intentSobre = new Intent(getApplicationContext(), SobreActivity.class);
+             startActivity(intentSobre);
+            }
+        });
     }
 }
